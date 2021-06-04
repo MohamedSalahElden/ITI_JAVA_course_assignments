@@ -20,9 +20,5 @@ public class Pyramids {
             System.out.println(next);
             
         }
-        
-        
-        
     }
-    
 }
