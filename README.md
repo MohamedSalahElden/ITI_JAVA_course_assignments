@@ -12,3 +12,13 @@ this repo contains all assignment solutions of JAVA course by Dr.Amr Elshafey as
 * Create List of Pyramids objects for each pyramid in the csv file
 * validate the values you make all needed conversion.
 - build main class and print data of each pyramid
+
+## task 2 :
+### deal with Collections
+- Develop and application that reads two files for cities and countries and store each in a List.
+- Each city entry contains code, name, continent, Surface Area, population
+- Create a map that uses the country code as keys and a list of cities as the value for each country.
+- For a given country code sort the cities according to the population
+- sample of cities data set contains 26568 city
+![image](https://user-images.githubusercontent.com/23504514/120897975-29ab8f00-c629-11eb-9f0b-bab99e2511e5.png)
+- sampe of countries data set
