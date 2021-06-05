@@ -24,7 +24,7 @@ this repo contains all assignment solutions of JAVA course by Dr.Amr Elshafey as
 
 ![image](https://user-images.githubusercontent.com/23504514/120898032-7ee7a080-c629-11eb-8a38-f1b0315ec061.png)
 
-- sampe of countries data set
+- sampe of countries data set with 224 country
 
 ![image](https://user-images.githubusercontent.com/23504514/120898020-6f685780-c629-11eb-9f1b-d37e86923834.png)
 
