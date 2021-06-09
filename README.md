@@ -28,3 +28,23 @@ this repo contains all assignment solutions of JAVA course by Dr.Amr Elshafey as
 
 ![image](https://user-images.githubusercontent.com/23504514/120898020-6f685780-c629-11eb-9f1b-d37e86923834.png)
 
+## Lab Exercise 2 :
+### deal with lambda expressions 1
+- Your goal is to make a method called betterString that takes two Strings and a lambda that says whether the first of the two
+is “better”.
+- The method should return that better String; i.e., if the function given by the lambda returns true, the betterString method should return the first String, otherwise betterString should return the second String.
+
+![image](https://user-images.githubusercontent.com/23504514/121335473-e861fa80-c91a-11eb-9eac-a913ebeb4902.png)
+
+### deal with lambda expressions 2
+- Given a String, the task is to check whether a string contains only alphabets or not.
+- use isLetter() method of Character class.
+
+## Lab Exercise 4 :
+### deal with Stream API
+- For the given data set used in JUPAI3 compute the median, average, quartile of the dataset based on one of the available
+characteristics.
+
+![image](https://user-images.githubusercontent.com/23504514/121335841-3d9e0c00-c91b-11eb-89f3-4a588ba6210f.png)
+
+
