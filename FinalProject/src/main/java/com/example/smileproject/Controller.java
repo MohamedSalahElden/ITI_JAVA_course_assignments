@@ -29,6 +29,7 @@ public class Controller {
     public String mainPage() throws IOException, URISyntaxException {
         //call function to get data set
         df = Dao.getData("src/main/resources/Wuzzuf_Jobs.csv");
+        df = Analyse.factroizeYOExp(df);
         return  "<p> <a href=\"/show \">     show data set     </a></p>"+
                 "<p> <a href=\"/strcture\">show structure</a></p>"+
                 "<p> <a href=\"/summary\">show summary</a></p>"+

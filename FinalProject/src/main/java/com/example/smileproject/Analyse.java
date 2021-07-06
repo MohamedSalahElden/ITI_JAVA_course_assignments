@@ -3,6 +3,7 @@ package com.example.smileproject;
 
 import smile.data.DataFrame;
 import smile.data.measure.NominalScale;
+import smile.data.vector.DoubleVector;
 
 import java.util.*;
 import java.util.List;
@@ -83,5 +84,44 @@ public class Analyse {
 
         return sorted_count;
         }
+
+    public static DataFrame factroizeYOExp(DataFrame df){
+        //        System.out.println(df);
+//        System.out.println(df.column("YearsExp"));
+        List ls = Arrays.asList(df.column("YearsExp").toStringArray());
+//        ls.stream().forEach(System.out::println);
+
+        List<Double> out = new ArrayList<>();
+
+        ls.stream().map(x -> x.toString().replace("Yrs of Exp" , "")).forEach(x -> {
+            if(((String) x).contains("null")){
+//                System.out.println("\n");
+//                System.out.println(0);
+                out.add((double) 0);
+            }
+            else if(((String) x).contains("+")){
+//                System.out.println("+++++++++++++");
+//                System.out.println(x.toString().replace("+" , ""));
+                out.add(Double.valueOf(x.toString().replace("+" , "").trim()));
+            }
+            else if(((String) x).contains("-")){
+//                System.out.println("------");
+//                System.out.println(x.toString().split("-")[0]);
+                out.add(Double.valueOf(x.toString().split("-")[0].trim()));
+            }
+        });
+        System.out.println(out.size());
+
+        double[] x = new double[out.size()];
+
+        for (int i=0 ; i<out.size() ; i++){
+            x[i] = out.get(i);
+        }
+
+        DoubleVector dv = DoubleVector.of("min Years of exp" , x);
+        System.out.println(dv);
+        return df.merge(dv);
     }
+
+}
 
